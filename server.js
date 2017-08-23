@@ -7,8 +7,8 @@ file.readFile("index.html",(err,htmlfile)=>{
 	}
 
 
-const host= '127.0.0.1';
-const port='80';
+const host=process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1' ;
+const port=process.env.OPENSHIFT_NODEJS_PORT || 8080;
 const server=hp.createServer((req,res)=> {
 	res.statusCode=200;
 	res.setHeader('cont-type','text/plain')
