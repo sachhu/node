@@ -1,0 +1,11 @@
+{
+  "name": "newnode",
+  "version": "1.0.0",
+  "description": "new node",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
